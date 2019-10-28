@@ -4,5 +4,5 @@
 			"Patric Wirth"
 		]
 	},
-	"bs-userinfo-description": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of user info extension"
+	"bs-userinfo-description": "{{desc|name=BlueSpiceUserInfo}}"
 }
