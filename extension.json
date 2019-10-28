@@ -1,0 +1,81 @@
+{
+	"name": "BlueSpiceUserInfo",
+	"license-name": "GPL-3.0-only",
+	"version": "3.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:UserInfo",
+	"author": "Patric Wirth",
+	"descriptionmsg": "bs-userinfo-description",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceUserInfo": {
+					"className": "\\BlueSpice\\UserInfo\\Extension",
+					"extPath": "/BlueSpiceUserInfo",
+					"package": "BlueSpice Pro"
+				}
+			},
+			"LessVarsRegistry": {
+				"bs-userinfo-color-lighten-information": "#BABABA"
+			}
+		},
+		"BlueSpiceUserInfo": {
+			"MetaData": {
+				"name": "\\BlueSpice\\UserInfo\\MetaData\\Name::getInstance",
+				"email": "\\BlueSpice\\UserInfo\\MetaData\\Email::getInstance"
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceUserInfo": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\UserInfo\\": "src/"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"ResourceModules": {
+		"ext.bluespice.userinfo.styles": {
+			"styles": [
+				"bluespice.userinfo.less"
+			],
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"ext.bluespice.userinfo": {
+			"scripts": [
+				"bluespice.userinfo.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.bluespice.userinfo.templates"
+			]
+		},
+		"ext.bluespice.userinfo.templates": {
+			"templates": [
+				"BlueSpiceUserInfo.UserInfo.Default.mustache",
+				"BlueSpiceFoundation.UserImage.mustache"
+			],
+			"class": "\\BlueSpice\\ResourceModule\\Templates"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceUserInfo/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"UserInfoHiddenMeta": {
+			"value": [ "email" ]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\UserInfo\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"HtmlPageLinkRendererEnd": "\\BlueSpice\\UserInfo\\Hook\\HtmlPageLinkRendererEnd\\AddMeta::callback",
+		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\UserInfo\\Hook\\BSFoundationRendererMakeTagAttribs\\AddMetaData::callback"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

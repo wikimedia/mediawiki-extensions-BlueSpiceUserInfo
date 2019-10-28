@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.biz>"
+		]
+	},
+	"bs-userinfo-description": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of user info extension"
+}
