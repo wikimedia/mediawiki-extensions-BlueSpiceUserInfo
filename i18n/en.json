@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth"
+		]
+	},
+	"bs-userinfo-description": "Provides flyouts with user informations for user images and links"
+}
