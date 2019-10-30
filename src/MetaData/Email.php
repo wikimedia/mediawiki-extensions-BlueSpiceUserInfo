@@ -1,15 +1,25 @@
 <?php
 namespace BlueSpice\UserInfo\MetaData;
+
+use Message;
 use BlueSpice\UserInfo\MetaData;
 
 class Email extends MetaData {
 
+	/**
+	 *
+	 * @return Message
+	 */
 	public function getLabel() {
-		return \Message::newFromKey(
+		return Message::newFromKey(
 			"bs-userinfo-metadata-email"
 		)->plain();
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getValue() {
 		return $this->user->getEmail();
 	}
