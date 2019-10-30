@@ -25,6 +25,9 @@
  * @filesource
  */
 namespace BlueSpice\UserInfo\Hook;
+
+use IContextSource;
+use Config;
 use BlueSpice\Hook;
 
 abstract class BSUserInfoMetaDataFactoryAllKeys extends Hook {
@@ -37,8 +40,8 @@ abstract class BSUserInfoMetaDataFactoryAllKeys extends Hook {
 
 	/**
 	 *
-	 * @param array $keys
-	 * @return boolean
+	 * @param array &$keys
+	 * @return bool
 	 */
 	public static function callback( &$keys ) {
 		$className = static::class;
@@ -50,6 +53,12 @@ abstract class BSUserInfoMetaDataFactoryAllKeys extends Hook {
 		return $hookHandler->process();
 	}
 
+	/**
+	 *
+	 * @param IContextSource $context
+	 * @param Config $config
+	 * @param array &$keys
+	 */
 	public function __construct( $context, $config, &$keys ) {
 		parent::__construct( $context, $config );
 
