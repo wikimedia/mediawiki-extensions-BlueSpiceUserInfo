@@ -25,6 +25,12 @@
  * @filesource
  */
 namespace BlueSpice\UserInfo;
+
+use MWException;
+use Config;
+use RequestContext;
+use User;
+use Hooks;
 use BlueSpice\IRegistry;
 
 class MetaDataFactory {
@@ -37,14 +43,14 @@ class MetaDataFactory {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
 	 *
 	 * @param IRegistry $registry
-	 * @param \Config $config
+	 * @param Config $config
 	 */
 	public function __construct( $registry, $config ) {
 		$this->registry = $registry;
@@ -54,34 +60,35 @@ class MetaDataFactory {
 	/**
 	 *
 	 * @param string $name
+	 * @param User|null $user
 	 * @return IMetaData|false The users MetaData or false if the user is
 	 * not logged in
 	 */
-	public function factory( $name, \User $user = null ) {
-		if( !$user instanceof \User ) {
-			$user = \RequestContext::getMain();
+	public function factory( $name, User $user = null ) {
+		if ( !$user instanceof User ) {
+			$user = RequestContext::getMain();
 		}
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return false;
 		}
 		$callback = $this->registry->getValue( $name, false );
-		\Hooks::run( 'BSUserInfoMetaDataFactoryCallback', [
+		Hooks::run( 'BSUserInfoMetaDataFactoryCallback', [
 			$name,
 			$user,
 			&$callback
-		]);
-		if( !$callback ) {
-			throw new \MWException( "Invalid registry for $name" );
+		] );
+		if ( !$callback ) {
+			throw new MWException( "Invalid registry for $name" );
 		}
-		if( !is_callable( $callback ) ) {
-			throw new \MWException( "$name not callable" );
+		if ( !is_callable( $callback ) ) {
+			throw new MWException( "$name not callable" );
 		}
 		$metaData = call_user_func_array( $callback, [
 			$this->config,
 			$name,
 			$user,
 			$this->isInitialHidden( $name )
-		]);
+		] );
 
 		return $metaData;
 	}
@@ -92,15 +99,16 @@ class MetaDataFactory {
 	 */
 	public function getAllKeys() {
 		$keys = $this->registry->getAllKeys();
-		\Hooks::run( 'BSUserInfoMetaDataFactoryAllKeys', [
+		Hooks::run( 'BSUserInfoMetaDataFactoryAllKeys', [
 			&$keys
-		]);
+		] );
 		return $keys;
 	}
 
 	/**
 	 *
-	 * @return boolean
+	 * @param string $name
+	 * @return bool
 	 */
 	protected function isInitialHidden( $name ) {
 		return in_array( $name, $this->config->get( 'UserInfoHiddenMeta' ) );

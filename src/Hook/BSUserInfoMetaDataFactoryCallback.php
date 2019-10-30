@@ -25,6 +25,10 @@
  * @filesource
  */
 namespace BlueSpice\UserInfo\Hook;
+
+use IContextSource;
+use Config;
+use User;
 use BlueSpice\Hook;
 
 abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
@@ -37,7 +41,7 @@ abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
 
 	/**
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $user = null;
 
@@ -50,9 +54,9 @@ abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
 	/**
 	 *
 	 * @param string $name
-	 * @param \User $user
-	 * @param string $callback
-	 * @return boolean
+	 * @param User $user
+	 * @param string &$callback
+	 * @return bool
 	 */
 	public static function callback( $name, $user, &$callback ) {
 		$className = static::class;
@@ -66,6 +70,14 @@ abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
 		return $hookHandler->process();
 	}
 
+	/**
+	 *
+	 * @param IContextSource $context
+	 * @param Config $config
+	 * @param string $name
+	 * @param User $user
+	 * @param string &$callback
+	 */
 	public function __construct( $context, $config, $name, $user, &$callback ) {
 		parent::__construct( $context, $config );
 
