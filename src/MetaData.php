@@ -1,11 +1,15 @@
 <?php
 namespace BlueSpice\UserInfo;
 
-abstract class MetaData implements IMetaData, \JsonSerializable {
+use JsonSerializable;
+use User;
+use Config;
+
+abstract class MetaData implements IMetaData, JsonSerializable {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
@@ -17,7 +21,7 @@ abstract class MetaData implements IMetaData, \JsonSerializable {
 
 	/**
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $user = null;
 
@@ -29,10 +33,10 @@ abstract class MetaData implements IMetaData, \JsonSerializable {
 
 	/**
 	 * Constructor
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param string $name
-	 * @param \User $user
-	 * @param boolean $hidden
+	 * @param User $user
+	 * @param bool $hidden
 	 */
 	protected function __construct( $config, $name, $user, $hidden ) {
 		$this->config = $config;
@@ -43,9 +47,10 @@ abstract class MetaData implements IMetaData, \JsonSerializable {
 
 	/**
 	 *
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param string $name
-	 * @param array $definition
+	 * @param User $user
+	 * @param bool $hidden
 	 * @return ConfigDefinition
 	 */
 	public static function getInstance( $config, $name, $user, $hidden ) {
@@ -91,6 +96,10 @@ abstract class MetaData implements IMetaData, \JsonSerializable {
 		return false;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function jsonSerialize() {
 		return [
 			'name' => $this->getName(),

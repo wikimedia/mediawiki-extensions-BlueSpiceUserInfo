@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\UserInfo\Hook\BeforePageDisplay;
+
 use BlueSpice\Hook\BeforePageDisplay;
 
 class AddResources extends BeforePageDisplay {
