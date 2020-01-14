@@ -26,10 +26,10 @@
  */
 namespace BlueSpice\UserInfo\Hook;
 
-use IContextSource;
-use Config;
-use User;
 use BlueSpice\Hook;
+use Config;
+use IContextSource;
+use User;
 
 abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
 

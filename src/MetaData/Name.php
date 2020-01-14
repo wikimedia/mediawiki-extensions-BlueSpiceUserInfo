@@ -2,9 +2,9 @@
 
 namespace BlueSpice\UserInfo\MetaData;
 
-use Message;
-use BlueSpice\UserInfo\MetaData;
 use BlueSpice\Services;
+use BlueSpice\UserInfo\MetaData;
+use Message;
 
 class Name extends MetaData {
 

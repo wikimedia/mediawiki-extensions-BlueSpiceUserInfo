@@ -26,9 +26,9 @@
  */
 namespace BlueSpice\UserInfo\Hook;
 
-use IContextSource;
-use Config;
 use BlueSpice\Hook;
+use Config;
+use IContextSource;
 
 abstract class BSUserInfoMetaDataFactoryAllKeys extends Hook {
 

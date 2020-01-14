@@ -2,11 +2,11 @@
 
 namespace BlueSpice\UserInfo\Hook\HtmlPageLinkRendererEnd;
 
+use BlueSpice\Hook\HtmlPageLinkRendererEnd;
 use FormatJson;
+use HtmlArmor;
 use Title;
 use User;
-use HtmlArmor;
-use BlueSpice\Hook\HtmlPageLinkRendererEnd;
 
 class AddMeta extends HtmlPageLinkRendererEnd {
 

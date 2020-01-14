@@ -2,9 +2,9 @@
 
 namespace BlueSpice\UserInfo\Hook\BSFoundationRendererMakeTagAttribs;
 
-use FormatJson;
-use BlueSpice\Renderer\UserImage;
 use BlueSpice\Hook\BSFoundationRendererMakeTagAttribs;
+use BlueSpice\Renderer\UserImage;
+use FormatJson;
 
 class AddMetaData extends BSFoundationRendererMakeTagAttribs {
 	/**

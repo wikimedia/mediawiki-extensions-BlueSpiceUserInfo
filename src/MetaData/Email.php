@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\UserInfo\MetaData;
 
-use Message;
 use BlueSpice\UserInfo\MetaData;
+use Message;
 
 class Email extends MetaData {
 

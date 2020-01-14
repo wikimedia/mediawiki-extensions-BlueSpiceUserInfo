@@ -26,12 +26,12 @@
  */
 namespace BlueSpice\UserInfo;
 
-use MWException;
+use BlueSpice\IRegistry;
 use Config;
+use Hooks;
+use MWException;
 use RequestContext;
 use User;
-use Hooks;
-use BlueSpice\IRegistry;
 
 class MetaDataFactory {
 

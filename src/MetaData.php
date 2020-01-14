@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\UserInfo;
 
+use Config;
 use JsonSerializable;
 use User;
-use Config;
 
 abstract class MetaData implements IMetaData, JsonSerializable {
 
