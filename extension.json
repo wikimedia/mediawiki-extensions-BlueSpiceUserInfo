@@ -44,20 +44,18 @@
 		"includes/ServiceWiring.php"
 	],
 	"ResourceModules": {
-		"ext.bluespice.userinfo.styles": {
-			"styles": [
-				"bluespice.userinfo.less"
-			],
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
 		"ext.bluespice.userinfo": {
 			"scripts": [
 				"bluespice.userinfo.js"
 			],
+			"styles": [
+				"bluespice.userinfo.less"
+			],
 			"dependencies": [
 				"ext.bluespice",
 				"ext.bluespice.userinfo.templates"
-			]
+			],
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
 		"ext.bluespice.userinfo.templates": {
 			"templates": [
