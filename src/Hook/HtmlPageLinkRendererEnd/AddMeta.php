@@ -46,7 +46,7 @@ class AddMeta extends HtmlPageLinkRendererEnd {
 
 		$text = HtmlArmor::getHtml( $this->text );
 		if ( $user->getName() === $text ) {
-			$userHelper = $this->getServices()->getBSUtilityFactory()
+			$userHelper = $this->getServices()->getService( 'BSUtilityFactory' )
 				->getUserHelper( $user );
 
 			$this->text = new HtmlArmor( $userHelper->getDisplayName() );
