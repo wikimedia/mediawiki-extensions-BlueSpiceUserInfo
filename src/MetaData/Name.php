@@ -23,7 +23,7 @@ class Name extends MetaData {
 	 * @return string
 	 */
 	public function getValue() {
-		$userHelper = Services::getInstance()->getBSUtilityFactory()
+		$userHelper = Services::getInstance()->getService( 'BSUtilityFactory' )
 			->getUserHelper( $this->user );
 
 		return $userHelper->getDisplayName();
