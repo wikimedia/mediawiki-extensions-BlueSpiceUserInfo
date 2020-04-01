@@ -43,6 +43,9 @@
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
+	"APIModules": {
+		"bs-userinfometa": "\\BlueSpice\\UserInfo\\Api\\Meta"
+	},
 	"ResourceModules": {
 		"ext.bluespice.userinfo": {
 			"scripts": [
@@ -52,8 +55,7 @@
 				"bluespice.userinfo.less"
 			],
 			"dependencies": [
-				"ext.bluespice",
-				"ext.bluespice.userinfo.templates"
+				"ext.bluespice"
 			],
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
@@ -77,7 +79,6 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\UserInfo\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"HtmlPageLinkRendererEnd": "\\BlueSpice\\UserInfo\\Hook\\HtmlPageLinkRendererEnd\\AddMeta::callback",
 		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\UserInfo\\Hook\\BSFoundationRendererMakeTagAttribs\\AddMetaData::callback"
 	},
 	"load_composer_autoloader": true,

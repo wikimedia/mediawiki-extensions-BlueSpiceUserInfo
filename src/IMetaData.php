@@ -32,4 +32,9 @@ interface IMetaData {
 	 * @return bool
 	 */
 	public function isSubTitle();
+
+	/**
+	 * @return array
+	 */
+	public function toArray();
 }
