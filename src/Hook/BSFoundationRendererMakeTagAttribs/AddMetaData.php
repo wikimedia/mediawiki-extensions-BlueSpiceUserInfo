@@ -4,7 +4,6 @@ namespace BlueSpice\UserInfo\Hook\BSFoundationRendererMakeTagAttribs;
 
 use BlueSpice\Hook\BSFoundationRendererMakeTagAttribs;
 use BlueSpice\Renderer\UserImage;
-use FormatJson;
 
 class AddMetaData extends BSFoundationRendererMakeTagAttribs {
 	/**
@@ -24,21 +23,7 @@ class AddMetaData extends BSFoundationRendererMakeTagAttribs {
 	 */
 	protected function doProcess() {
 		$user = $this->renderer->getUser();
-		$factory = $this->getServices()->getService(
-			'BSUserInfoMetaDataFactory'
-		);
-		$userInfo = [
-			'username' => $user->getName(),
-			'meta' => [],
-		];
-		foreach ( $factory->getAllKeys() as $name ) {
-			$metaData = $factory->factory( $name, $user );
-			if ( !$metaData || $metaData->isHidden() ) {
-				continue;
-			}
-			$userInfo['meta'][$metaData->getName()] = $metaData;
-		}
-		$this->attribs['data-bs-userinfo'] = FormatJson::encode( $userInfo );
+		$this->attribs['data-bs-userinfo'] = $user->getName();
 		return true;
 	}
 }

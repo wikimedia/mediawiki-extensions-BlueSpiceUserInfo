@@ -1,8 +1,8 @@
-( function( d, mw, $ ){
+( function( d, mw, $, bs ){
 
-	function _initFlyout( $elem ) {
-		var data = $elem.data( 'bs-userinfo' );
+	bs.userinfo = bs.userinfo || {};
 
+	function _initFlyout( $elem, data ) {
 		var $container = $( '<div></div>' );
 		var $content = $( '<div class="bs-userinfo-container"></div>' );
 
@@ -84,17 +84,34 @@
 		$elem.data( 'userinfo-flyout-created', true );
 	}
 
-	$( d ).on( 'mouseover', ".content-wrapper [data-bs-userinfo]" , function( event ) {
+	$( d ).on( 'mouseover', ".content-wrapper [data-bs-username], [data-bs-userinfo]", function( event ) {
 		var $elem = $( this );
 		if( $elem.data( 'userinfo-flyout-created' ) ) {
 			return;
 		}
-
-		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
-			Ext.onReady( function() {
-				_initFlyout( $elem );
-			} );
+		var username = $elem.attr( 'data-bs-username' ) || $elem.attr( 'data-bs-userinfo' );
+		var modules = [
+			'ext.bluespice.extjs', "ext.bluespice.userinfo.templates"
+		];
+		mw.loader.using( modules ).done( function() {
+			if ( bs.userinfo[username] ) {
+				Ext.onReady( function() {
+					_initFlyout( $elem, bs.userinfo[username] );
+				} );
+				return;
+			}
+			var api = new mw.Api();
+			api.postWithToken( 'csrf', {
+				action: 'bs-userinfometa',
+				username: username
+			})
+			.done( function( response ){
+				bs.userinfo[username] = response.payload;
+				Ext.onReady( function() {
+					_initFlyout( $elem, response.payload );
+				} );
+			});
 		});
 	});
 
-}( document, mediaWiki, jQuery ) );
+}( document, mediaWiki, jQuery, blueSpice ) );

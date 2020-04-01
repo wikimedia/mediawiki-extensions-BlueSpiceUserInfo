@@ -101,6 +101,14 @@ abstract class MetaData implements IMetaData, JsonSerializable {
 	 * @return array
 	 */
 	public function jsonSerialize() {
+		return $this->toArray();
+	}
+
+	/**
+	 *
+	 * @return array
+	 */
+	public function toArray() {
 		return [
 			'name' => $this->getName(),
 			'value' => $this->getValue(),
