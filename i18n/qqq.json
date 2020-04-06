@@ -4,5 +4,8 @@
 			"Patric Wirth"
 		]
 	},
-	"bs-userinfo-description": "{{desc|name=BlueSpiceUserInfo}}"
+	"bs-userinfo-description": "{{desc|name=BlueSpiceUserInfo}}",
+	"apihelp-bs-userinfometa-description": "{{doc-apihelp-description|bs-userinfometa}}",
+	"apihelp-bs-userinfometa-summary": "{{doc-apihelp-summary|bs-userinfometa}}",
+	"apihelp-bs-userinfometa-param-username": "{{doc-apihelp-param|bs-userinfometa|username}}"
 }
