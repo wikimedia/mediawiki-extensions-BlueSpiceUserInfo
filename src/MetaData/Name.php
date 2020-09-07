@@ -2,8 +2,8 @@
 
 namespace BlueSpice\UserInfo\MetaData;
 
-use BlueSpice\Services;
 use BlueSpice\UserInfo\MetaData;
+use MediaWiki\MediaWikiServices;
 use Message;
 
 class Name extends MetaData {
@@ -23,7 +23,7 @@ class Name extends MetaData {
 	 * @return string
 	 */
 	public function getValue() {
-		$userHelper = Services::getInstance()->getService( 'BSUtilityFactory' )
+		$userHelper = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
 			->getUserHelper( $this->user );
 
 		return $userHelper->getDisplayName();
