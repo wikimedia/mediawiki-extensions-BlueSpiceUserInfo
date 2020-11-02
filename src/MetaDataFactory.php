@@ -28,7 +28,7 @@ namespace BlueSpice\UserInfo;
 
 use BlueSpice\IRegistry;
 use Config;
-use Hooks;
+use MediaWiki\HookContainer\HookContainer;
 use MWException;
 use RequestContext;
 use User;
@@ -49,12 +49,20 @@ class MetaDataFactory {
 
 	/**
 	 *
+	 * @var HookContainer
+	 */
+	protected $hookContainer = null;
+
+	/**
+	 *
 	 * @param IRegistry $registry
 	 * @param Config $config
+	 * @param HookContainer $hookContainer
 	 */
-	public function __construct( $registry, $config ) {
+	public function __construct( $registry, $config, HookContainer $hookContainer ) {
 		$this->registry = $registry;
 		$this->config = $config;
+		$this->hookContainer = $hookContainer;
 	}
 
 	/**
@@ -72,7 +80,7 @@ class MetaDataFactory {
 			return false;
 		}
 		$callback = $this->registry->getValue( $name, false );
-		Hooks::run( 'BSUserInfoMetaDataFactoryCallback', [
+		$this->hookContainer->run( 'BSUserInfoMetaDataFactoryCallback', [
 			$name,
 			$user,
 			&$callback
@@ -99,7 +107,7 @@ class MetaDataFactory {
 	 */
 	public function getAllKeys() {
 		$keys = $this->registry->getAllKeys();
-		Hooks::run( 'BSUserInfoMetaDataFactoryAllKeys', [
+		$this->hookContainer->run( 'BSUserInfoMetaDataFactoryAllKeys', [
 			&$keys
 		] );
 		return $keys;

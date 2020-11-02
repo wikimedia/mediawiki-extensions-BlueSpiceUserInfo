@@ -11,7 +11,8 @@ return [
 		);
 		return new \BlueSpice\UserInfo\MetaDataFactory(
 			$registry,
-			$services->getConfigFactory()->makeConfig( 'bsg' )
+			$services->getConfigFactory()->makeConfig( 'bsg' ),
+			$services->getHookContainer()
 		);
 	},
 ];
