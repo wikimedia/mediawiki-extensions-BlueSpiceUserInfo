@@ -4,5 +4,8 @@
 			"Joetaras"
 		]
 	},
-	"bs-userinfo-description": "Dèje flyouts cu le 'mbormaziune de l'utende pe le immaggine e le collegaminde de le utinde"
+	"bs-userinfo-description": "Dèje flyouts cu le 'mbormaziune de l'utende pe le immaggine e le collegaminde de le utinde",
+	"apihelp-bs-userinfometa-description": "Elenghe de le date de le meta 'mbormaziune de le utinde scacchiate",
+	"apihelp-bs-userinfometa-summary": "Elenghe de le date de le meta 'mbormaziune de le utinde scacchiate",
+	"apihelp-bs-userinfometa-param-username": "Nome de l'utende, ce date de meta 'mbormazione adda essere elengate"
 }
