@@ -46,7 +46,7 @@ class Meta extends Api {
 	 * @return array
 	 */
 	protected function getAllowedParams() {
-		return [
+		return parent::getAllowedParams() + [
 			static::PARAM_USERNAME => [
 				static::PARAM_REQUIRED => true,
 				static::PARAM_TYPE => 'string',
