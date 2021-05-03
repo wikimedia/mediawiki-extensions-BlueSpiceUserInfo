@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSUserInfoMetaDataFactory' => function ( MediaWikiServices $services ) {
+	'BSUserInfoMetaDataFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceUserInfoMetaData'
 		);
