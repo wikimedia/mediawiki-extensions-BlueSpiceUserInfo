@@ -6,7 +6,7 @@
 		]
 	},
 	"bs-userinfo-description": "Fournit des aperçus au survol avec les informations utilisateur pour les images et les liens d’un utilisateur",
-	"apihelp-bs-userinfometa-description": "Liste les métadonnées d’information des utilisateurs fournis",
-	"apihelp-bs-userinfometa-summary": "Liste les métadonnées d’information des utilisateurs fournis",
-	"apihelp-bs-userinfometa-param-username": "Nom de l’utilisateur, dont les métadonnées d’information vont être listées"
+	"apihelp-bs-userinfometa-description": "Liste les métadonnées d’informations sur les utilisateurs fournis",
+	"apihelp-bs-userinfometa-summary": "Liste les métadonnées d’informations sur les utilisateurs fournis",
+	"apihelp-bs-userinfometa-param-username": "Nom de l’utilisateur, dont les métadonnées d’informations vont être listées"
 }
