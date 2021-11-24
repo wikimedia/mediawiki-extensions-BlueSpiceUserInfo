@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth"
+			"Patric Wirth",
+			"McDutchie"
 		]
 	},
-	"bs-userinfo-description": "{{desc|name=BlueSpiceUserInfo}}",
+	"bs-userinfo-description": "{{desc|name=BlueSpiceUserInfo}}\nA flyout is a popup menu that branches off some other visual element.",
 	"apihelp-bs-userinfometa-description": "{{doc-apihelp-description|bs-userinfometa}}",
 	"apihelp-bs-userinfometa-summary": "{{doc-apihelp-summary|bs-userinfometa}}",
 	"apihelp-bs-userinfometa-param-username": "{{doc-apihelp-param|bs-userinfometa|username}}"
