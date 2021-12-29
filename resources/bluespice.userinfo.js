@@ -17,7 +17,7 @@
 		);
 
 		var $userImage = tplUserImage.render( {
-			'widht': 50,
+			'width': 50,
 			'height': 50,
 			'username': data.username,
 			'imagesrc': mw.config.get( 'wgScriptPath' ) + '/dynamic_file.php?module=userprofileimage&username=' + data.username + '&width=70&height=70',
