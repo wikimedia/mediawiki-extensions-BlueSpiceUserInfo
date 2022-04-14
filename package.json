@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpiceUserInfo",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
