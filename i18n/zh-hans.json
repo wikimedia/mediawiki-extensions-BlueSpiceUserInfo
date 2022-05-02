@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarrySky"
+		]
+	},
+	"bs-userinfo-description": "为用户图像和链接提供带有用户信息的弹出窗口",
+	"apihelp-bs-userinfometa-description": "列出给定的用户元信息数据",
+	"apihelp-bs-userinfometa-summary": "列出给定的用户元信息数据",
+	"apihelp-bs-userinfometa-param-username": "用户名，将列出其元信息数据"
+}
