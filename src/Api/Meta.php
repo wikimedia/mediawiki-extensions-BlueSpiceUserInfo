@@ -18,9 +18,7 @@ class Meta extends Api {
 		if ( !$user ) {
 			return Status::newFatal( 'invalid user' );
 		}
-		$factory = $this->getServices()->getService(
-			'BSUserInfoMetaDataFactory'
-		);
+		$factory = $this->services->getService( 'BSUserInfoMetaDataFactory' );
 		$return = [
 			'username' => $user->getName(),
 			'meta' => []
