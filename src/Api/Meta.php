@@ -5,7 +5,6 @@ namespace BlueSpice\UserInfo\Api;
 use BlueSpice\Api;
 use BlueSpice\Api\Task\StatusConverter;
 use Status;
-use User;
 
 class Meta extends Api {
 
@@ -14,7 +13,7 @@ class Meta extends Api {
 	public function execute() {
 		$this->checkPermissions();
 
-		$user = User::newFromName( $this->getParameter( 'username' ) );
+		$user = $this->services->getUserFactory()->newFromName( $this->getParameter( 'username' ) );
 		if ( !$user ) {
 			return Status::newFatal( 'invalid user' );
 		}
