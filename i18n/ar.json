@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
-	"bs-userinfo-description": "يوفر منشورات مع معلومات المستخدم لصور وروابط المستخدم"
+	"bs-userinfo-description": "يوفر منشورات مع معلومات المستخدم لصور وروابط المستخدم",
+	"apihelp-bs-userinfometa-description": "يسرد بيانات المعلومات الوصفية للمستخدمين المعينين",
+	"apihelp-bs-userinfometa-summary": "يسرد بيانات المعلومات الوصفية للمستخدمين المعينين",
+	"apihelp-bs-userinfometa-param-username": "اسم المستخدم ، سيتم سرد بيانات المعلومات الوصفية"
 }
