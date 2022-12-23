@@ -40,6 +40,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\UserInfo\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\UserInfo\\Tests\\": "tests/phpunit/"
+	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
