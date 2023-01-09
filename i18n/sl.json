@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-userinfo-description": "Zagotavlja pojavna okna z uporabniškimi informacijami za uporabniške slike in povezave",
+	"apihelp-bs-userinfometa-description": "Navede metapodatke o predloženem uporabniku",
+	"apihelp-bs-userinfometa-summary": "Navede metapodatke o predlo\\enem uporabniku",
+	"apihelp-bs-userinfometa-param-username": "Ime uporabnika, čigar metapodatki bodo navedeni"
+}
