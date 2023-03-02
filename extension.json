@@ -2,7 +2,7 @@
 	"name": "BlueSpiceUserInfo",
 	"license-name": "GPL-3.0-only",
 	"version": "4.3.0-alpha",
-	"url": "https://en.wiki.bluespice.com/wiki/Reference:UserInfo",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceUserInfo",
 	"author": "Patric Wirth",
 	"descriptionmsg": "bs-userinfo-description",
 	"requires": {
