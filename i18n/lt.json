@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"apihelp-bs-userinfometa-description": "Pateikia pateiktų naudotojų meta informacijos duomenis",
+	"apihelp-bs-userinfometa-summary": "Pateikia pateiktų naudotojų meta informacijos duomenis",
+	"apihelp-bs-userinfometa-param-username": "Naudotojo, kurio meta informacijos duomenys bus pateikti, vardas"
+}
