@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-userinfo-description": "אספקת חלונות צפים עם מידע משתמש עבור תמונות וקישורים של משתמשים",
-	"apihelp-bs-userinfometa-description": "רושמת את נתוני המטא־מידע של המשתמשים הנתונים",
 	"apihelp-bs-userinfometa-summary": "רושמת את נתוני המטא־מידע של המשתמשים הנתונים",
 	"apihelp-bs-userinfometa-param-username": "שם המשתמש שנתוני המטא־מידע שלו יירשמו"
 }

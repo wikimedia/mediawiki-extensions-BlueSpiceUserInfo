@@ -4,7 +4,6 @@
 			"Ykhwong"
 		]
 	},
-	"apihelp-bs-userinfometa-description": "지정된 사용자 메타 정보 데이터를 나열합니다",
 	"apihelp-bs-userinfometa-summary": "지정된 사용자 메타 정보 데이터를 나열합니다",
 	"apihelp-bs-userinfometa-param-username": "메타 정보 데이터가 나열될 사용자의 이름"
 }

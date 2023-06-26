@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-userinfo-description": "Kullanıcı görüntüleri ve linkleri için kullanıcı bilgileriyle bilgi çıkışları sağlar",
-	"apihelp-bs-userinfometa-description": "Verilen kullanıcıların meta bilgi verilerini listeler",
 	"apihelp-bs-userinfometa-summary": "Verilen kullanıcıların meta bilgi verilerini listeler",
 	"apihelp-bs-userinfometa-param-username": "Kullanıcının adı, kimin meta bilgi verileri listelenir"
 }
