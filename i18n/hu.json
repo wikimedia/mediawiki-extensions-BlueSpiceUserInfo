@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"apihelp-bs-userinfometa-summary": "Listázza az adott felhasználók metainformációs adatait",
+	"apihelp-bs-userinfometa-param-username": "A felhasználó neve, akinek a metainformációs adatai megjelennek"
+}
