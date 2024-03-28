@@ -5,6 +5,7 @@ namespace BlueSpice\UserInfo\Api;
 use BlueSpice\Api;
 use BlueSpice\Api\Task\StatusConverter;
 use Status;
+use Wikimedia\ParamValidator\ParamValidator;
 
 class Meta extends Api {
 
@@ -45,8 +46,8 @@ class Meta extends Api {
 	protected function getAllowedParams() {
 		return parent::getAllowedParams() + [
 			static::PARAM_USERNAME => [
-				static::PARAM_REQUIRED => true,
-				static::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => true,
+				ParamValidator::PARAM_TYPE => 'string',
 				static::PARAM_HELP_MSG => 'apihelp-bs-userinfometa-param-username',
 			],
 		];
