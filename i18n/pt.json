@@ -4,8 +4,8 @@
 			"Hamilton Abreu"
 		]
 	},
-	"bs-userinfo-description": "Fornece listas de opções com informações do utilizador para imagens e hiperligações do utilizador",
-	"apihelp-bs-userinfometa-description": "Lista os metadados de informação dos utilizadores fornecidos",
-	"apihelp-bs-userinfometa-summary": "Lista os metadados de informação dos utilizadores fornecidos",
-	"apihelp-bs-userinfometa-param-username": "Nome do utilizador cujos metadados de informação serão listados"
+	"bs-userinfo-description": "Fornece listas de op\u00e7\u00f5es com informa\u00e7\u00f5es do utilizador para imagens e hiperliga\u00e7\u00f5es do utilizador",
+	"apihelp-bs-userinfometa-description": "Lista os metadados de informa\u00e7\u00e3o dos utilizadores fornecidos",
+	"apihelp-bs-userinfometa-summary": "Lista os metadados de informa\u00e7\u00e3o dos utilizadores fornecidos",
+	"apihelp-bs-userinfometa-param-username": "Nome do utilizador cujos metadados de informa\u00e7\u00e3o ser\u00e3o listados"
 }
