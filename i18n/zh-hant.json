@@ -4,8 +4,8 @@
 			"Kly"
 		]
 	},
-	"bs-userinfo-description": "提供用於使用者圖片與連結的使用者資訊飛出視窗",
-	"apihelp-bs-userinfometa-description": "列出指定使用者的詮釋資訊資料",
-	"apihelp-bs-userinfometa-summary": "列出指定使用者的詮釋資訊資料",
-	"apihelp-bs-userinfometa-param-username": "使用者的名稱，會列出該位的詮釋資訊資料"
+	"bs-userinfo-description": "\u63d0\u4f9b\u7528\u65bc\u4f7f\u7528\u8005\u5716\u7247\u8207\u9023\u7d50\u7684\u4f7f\u7528\u8005\u8cc7\u8a0a\u98db\u51fa\u8996\u7a97",
+	"apihelp-bs-userinfometa-description": "\u5217\u51fa\u6307\u5b9a\u4f7f\u7528\u8005\u7684\u8a6e\u91cb\u8cc7\u8a0a\u8cc7\u6599",
+	"apihelp-bs-userinfometa-summary": "\u5217\u51fa\u6307\u5b9a\u4f7f\u7528\u8005\u7684\u8a6e\u91cb\u8cc7\u8a0a\u8cc7\u6599",
+	"apihelp-bs-userinfometa-param-username": "\u4f7f\u7528\u8005\u7684\u540d\u7a31\uff0c\u6703\u5217\u51fa\u8a72\u4f4d\u7684\u8a6e\u91cb\u8cc7\u8a0a\u8cc7\u6599"
 }
