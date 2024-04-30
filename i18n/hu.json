@@ -4,7 +4,7 @@
 			"Krisztina"
 		]
 	},
-	"apihelp-bs-userinfometa-description": "List\u00e1zza az adott felhaszn\u00e1l\u00f3k metainform\u00e1ci\u00f3s adatait",
-	"apihelp-bs-userinfometa-summary": "List\u00e1zza az adott felhaszn\u00e1l\u00f3k metainform\u00e1ci\u00f3s adatait",
-	"apihelp-bs-userinfometa-param-username": "A felhaszn\u00e1l\u00f3 neve, akinek a metainform\u00e1ci\u00f3s adatai megjelennek"
+	"apihelp-bs-userinfometa-description": "Listázza az adott felhasználók metainformációs adatait",
+	"apihelp-bs-userinfometa-summary": "Listázza az adott felhasználók metainformációs adatait",
+	"apihelp-bs-userinfometa-param-username": "A felhasználó neve, akinek a metainformációs adatai megjelennek"
 }

@@ -4,8 +4,8 @@
 			"StarrySky"
 		]
 	},
-	"bs-userinfo-description": "\u4e3a\u7528\u6237\u56fe\u50cf\u548c\u94fe\u63a5\u63d0\u4f9b\u5e26\u6709\u7528\u6237\u4fe1\u606f\u7684\u5f39\u51fa\u7a97\u53e3",
-	"apihelp-bs-userinfometa-description": "\u5217\u51fa\u7ed9\u5b9a\u7684\u7528\u6237\u5143\u4fe1\u606f\u6570\u636e",
-	"apihelp-bs-userinfometa-summary": "\u5217\u51fa\u7ed9\u5b9a\u7684\u7528\u6237\u5143\u4fe1\u606f\u6570\u636e",
-	"apihelp-bs-userinfometa-param-username": "\u7528\u6237\u540d\uff0c\u5c06\u5217\u51fa\u5176\u5143\u4fe1\u606f\u6570\u636e"
+	"bs-userinfo-description": "为用户图像和链接提供带有用户信息的弹出窗口",
+	"apihelp-bs-userinfometa-description": "列出给定的用户元信息数据",
+	"apihelp-bs-userinfometa-summary": "列出给定的用户元信息数据",
+	"apihelp-bs-userinfometa-param-username": "用户名，将列出其元信息数据"
 }

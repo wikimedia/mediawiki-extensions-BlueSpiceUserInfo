@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald S\u00f8by"
+			"Jon Harald Søby"
 		]
 	},
 	"bs-userinfo-description": "Gir sprettoppmenyer med brukerinformasjon for brukerbilder og -lenker",
 	"apihelp-bs-userinfometa-description": "Lister opp de gitte brukernes metadata",
 	"apihelp-bs-userinfometa-summary": "Lister opp de gitte brukernes metadata",
-	"apihelp-bs-userinfometa-param-username": "Navnet p\u00e5 brukeren hvis metadata skal listes opp"
+	"apihelp-bs-userinfometa-param-username": "Navnet på brukeren hvis metadata skal listes opp"
 }
