@@ -4,8 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"bs-userinfo-description": "Zagotavlja pojavna okna z uporabni\u0161kimi informacijami za uporabni\u0161ke slike in povezave",
-	"apihelp-bs-userinfometa-description": "Navede metapodatke o predlo\u017eenem uporabniku",
+	"bs-userinfo-description": "Zagotavlja pojavna okna z uporabniškimi informacijami za uporabniške slike in povezave",
+	"apihelp-bs-userinfometa-description": "Navede metapodatke o predloženem uporabniku",
 	"apihelp-bs-userinfometa-summary": "Navede metapodatke o predlo\\enem uporabniku",
-	"apihelp-bs-userinfometa-param-username": "Ime uporabnika, \u010digar metapodatki bodo navedeni"
+	"apihelp-bs-userinfometa-param-username": "Ime uporabnika, čigar metapodatki bodo navedeni"
 }

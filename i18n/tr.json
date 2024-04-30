@@ -4,8 +4,8 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"bs-userinfo-description": "Kullan\u0131c\u0131 g\u00f6r\u00fcnt\u00fcleri ve linkleri i\u00e7in kullan\u0131c\u0131 bilgileriyle bilgi \u00e7\u0131k\u0131\u015flar\u0131 sa\u011flar",
-	"apihelp-bs-userinfometa-description": "Verilen kullan\u0131c\u0131lar\u0131n meta bilgi verilerini listeler",
-	"apihelp-bs-userinfometa-summary": "Verilen kullan\u0131c\u0131lar\u0131n meta bilgi verilerini listeler",
-	"apihelp-bs-userinfometa-param-username": "Kullan\u0131c\u0131n\u0131n ad\u0131, kimin meta bilgi verileri listelenir"
+	"bs-userinfo-description": "Kullanıcı görüntüleri ve linkleri için kullanıcı bilgileriyle bilgi çıkışları sağlar",
+	"apihelp-bs-userinfometa-description": "Verilen kullanıcıların meta bilgi verilerini listeler",
+	"apihelp-bs-userinfometa-summary": "Verilen kullanıcıların meta bilgi verilerini listeler",
+	"apihelp-bs-userinfometa-param-username": "Kullanıcının adı, kimin meta bilgi verileri listelenir"
 }

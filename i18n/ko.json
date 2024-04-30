@@ -4,7 +4,7 @@
 			"Ykhwong"
 		]
 	},
-	"apihelp-bs-userinfometa-description": "\uc9c0\uc815\ub41c \uc0ac\uc6a9\uc790 \uba54\ud0c0 \uc815\ubcf4 \ub370\uc774\ud130\ub97c \ub098\uc5f4\ud569\ub2c8\ub2e4",
-	"apihelp-bs-userinfometa-summary": "\uc9c0\uc815\ub41c \uc0ac\uc6a9\uc790 \uba54\ud0c0 \uc815\ubcf4 \ub370\uc774\ud130\ub97c \ub098\uc5f4\ud569\ub2c8\ub2e4",
-	"apihelp-bs-userinfometa-param-username": "\uba54\ud0c0 \uc815\ubcf4 \ub370\uc774\ud130\uac00 \ub098\uc5f4\ub420 \uc0ac\uc6a9\uc790\uc758 \uc774\ub984"
+	"apihelp-bs-userinfometa-description": "지정된 사용자 메타 정보 데이터를 나열합니다",
+	"apihelp-bs-userinfometa-summary": "지정된 사용자 메타 정보 데이터를 나열합니다",
+	"apihelp-bs-userinfometa-param-username": "메타 정보 데이터가 나열될 사용자의 이름"
 }

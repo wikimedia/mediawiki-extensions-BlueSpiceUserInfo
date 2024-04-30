@@ -5,8 +5,8 @@
 			"Verdy p"
 		]
 	},
-	"bs-userinfo-description": "Fournit des aper\u00e7us au survol avec les informations utilisateur pour les images et les liens d\u2019un utilisateur",
-	"apihelp-bs-userinfometa-description": "Liste les m\u00e9tadonn\u00e9es d\u2019informations sur les utilisateurs fournis",
-	"apihelp-bs-userinfometa-summary": "Liste les m\u00e9tadonn\u00e9es d\u2019informations sur les utilisateurs fournis",
-	"apihelp-bs-userinfometa-param-username": "Nom de l\u2019utilisateur, dont les m\u00e9tadonn\u00e9es d\u2019informations vont \u00eatre list\u00e9es"
+	"bs-userinfo-description": "Fournit des aperçus au survol avec les informations utilisateur pour les images et les liens d’un utilisateur",
+	"apihelp-bs-userinfometa-description": "Liste les métadonnées d’informations sur les utilisateurs fournis",
+	"apihelp-bs-userinfometa-summary": "Liste les métadonnées d’informations sur les utilisateurs fournis",
+	"apihelp-bs-userinfometa-param-username": "Nom de l’utilisateur, dont les métadonnées d’informations vont être listées"
 }
