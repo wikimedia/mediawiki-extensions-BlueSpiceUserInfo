@@ -85,6 +85,7 @@
 	}
 
 	$( d ).on( 'mouseover', ".content-wrapper [data-bs-username], [data-bs-userinfo]", function( event ) {
+		return;
 		var $elem = $( this );
 		if( $elem.data( 'userinfo-flyout-created' ) ) {
 			return;
