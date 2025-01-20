@@ -29,7 +29,7 @@ namespace BlueSpice\UserInfo\Hook;
 use BlueSpice\Hook;
 use Config;
 use IContextSource;
-use User;
+use MediaWiki\User\User;
 
 abstract class BSUserInfoMetaDataFactoryCallback extends Hook {
 
