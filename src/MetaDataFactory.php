@@ -29,9 +29,9 @@ namespace BlueSpice\UserInfo;
 use BlueSpice\IRegistry;
 use Config;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\User\User;
 use MWException;
 use RequestContext;
-use User;
 
 class MetaDataFactory {
 

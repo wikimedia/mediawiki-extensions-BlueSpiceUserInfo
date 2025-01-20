@@ -3,7 +3,7 @@ namespace BlueSpice\UserInfo;
 
 use Config;
 use JsonSerializable;
-use User;
+use MediaWiki\User\User;
 
 abstract class MetaData implements IMetaData, JsonSerializable {
 
