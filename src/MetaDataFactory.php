@@ -28,10 +28,10 @@ namespace BlueSpice\UserInfo;
 
 use BlueSpice\IRegistry;
 use Config;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\User\User;
 use MWException;
-use RequestContext;
 
 class MetaDataFactory {
 
