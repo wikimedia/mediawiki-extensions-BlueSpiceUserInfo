@@ -2,7 +2,7 @@
 namespace BlueSpice\UserInfo\MetaData;
 
 use BlueSpice\UserInfo\MetaData;
-use Message;
+use MediaWiki\Message\Message;
 
 class Email extends MetaData {
 
