@@ -4,7 +4,7 @@ namespace BlueSpice\UserInfo\MetaData;
 
 use BlueSpice\UserInfo\MetaData;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 
 class Name extends MetaData {
 
