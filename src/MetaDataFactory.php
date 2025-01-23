@@ -27,7 +27,7 @@
 namespace BlueSpice\UserInfo;
 
 use BlueSpice\IRegistry;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\User\User;
