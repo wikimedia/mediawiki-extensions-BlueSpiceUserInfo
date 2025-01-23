@@ -27,8 +27,8 @@
 namespace BlueSpice\UserInfo\Hook;
 
 use BlueSpice\Hook;
-use Config;
 use IContextSource;
+use MediaWiki\Config\Config;
 
 abstract class BSUserInfoMetaDataFactoryAllKeys extends Hook {
 
