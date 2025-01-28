@@ -4,7 +4,7 @@ namespace BlueSpice\UserInfo\Api;
 
 use BlueSpice\Api;
 use BlueSpice\Api\Task\StatusConverter;
-use Status;
+use MediaWiki\Status\Status;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class Meta extends Api {
