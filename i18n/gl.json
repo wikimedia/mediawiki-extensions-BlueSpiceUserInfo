@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-userinfo-description": "Ofrece menús emerxentes con información do usuario sobre as imaxes e as ligazóns dun usuario",
+	"apihelp-bs-userinfometa-summary": "Lista os datos de metainformación dos usuarios indicados",
+	"apihelp-bs-userinfometa-param-username": "Nome do usuario cuxos datos de metainformación se listarán"
+}
