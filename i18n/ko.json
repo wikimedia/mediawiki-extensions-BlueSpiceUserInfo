@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
 	"apihelp-bs-userinfometa-description": "지정된 사용자 메타 정보 데이터를 나열합니다",
 	"apihelp-bs-userinfometa-summary": "지정된 사용자 메타 정보 데이터를 나열합니다",
-	"apihelp-bs-userinfometa-param-username": "메타 정보 데이터가 나열될 사용자의 이름"
+	"apihelp-bs-userinfometa-param-username": "메타 정보 데이터가 나열될 사용자의 이름",
+	"bs-userinfo-description": "사용자 이미지 및 링크를 위한 사용자 정보를 담은 flyout 팝업 창을 제공합니다"
 }
