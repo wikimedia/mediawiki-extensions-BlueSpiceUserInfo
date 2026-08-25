@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-userinfo-description": "Poskytuje vyskakovacie panely s informáciami o používateľovi pri používateľských obrázkoch a odkazoch",
+	"apihelp-bs-userinfometa-summary": "Vypíše metainformácie o zadaných používateľoch",
+	"apihelp-bs-userinfometa-param-username": "Meno používateľa, ktorého metainformácie sa vypíšu"
+}
